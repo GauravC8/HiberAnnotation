@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2019 12:10:23 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.niit.HiberAnnotations.Student" table="STUDENT">
+        <id name="studentId" type="int">
+            <column name="STUDENTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="studentName" type="java.lang.String" length="20">
+            <column name="STUDENTNAME" />
+        </property>
+        <property name="marks" type="int">
+            <column name="MARKS" />
+        </property>
+        <set name="Courses" table="STUDENT_COURSES" inverse="false" lazy="true" cascade="all">
+            <key>
+                <column name="STUDENTID" />
+            </key>
+           
+            <many-to-many class="com.niit.HiberAnnotations.Courses" column="course_id"></many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

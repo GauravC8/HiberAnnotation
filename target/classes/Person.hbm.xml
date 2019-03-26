@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 25, 2019 3:04:23 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.niit.hiber.Person" table="PERSON">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<property name="emailAddress" type="java.lang.String">
+			<column name="EMAILADDRESS" />
+		</property>
+		<!-- <many-to-one name="job" class="com.niit.hiber.Job"
+			fetch="join">
+			<column name="JOB" />
+		</many-to-one> -->
+
+		<component name="job" class="com.niit.hiber.Job">
+			<!-- <parent name="person"/> -->
+			<property name="designation" column="DESIGNATION"
+				type="java.lang.String" />
+			<property name="salary" column="SALARY" type="int" />
+			<property name="jobDescription" column="JOB_DESCRIPTION"
+				type="java.lang.String" />
+		</component>
+	</class>
+</hibernate-mapping>
+

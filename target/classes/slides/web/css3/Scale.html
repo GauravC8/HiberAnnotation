@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.square{
+    width:100px;
+    height:100px;
+    background-color: yellow;
+    border:5px solid black;
+    margin:100px;
+    transition:transform 1s;
+}
+   .square:hover{ transform:scale(2); }
+
+.droplet{ width:100px;
+    height:100px;
+    background-color: mediumaquamarine;
+    border-radius:2% 50%;
+    margin:100px;
+    transition:all 3s;
+    transition-timing:ease-in-out;}
+
+.droplet:hover{ transform:rotateX(180deg); }
+
+</style>
+</head>
+<body>
+
+<h1>The Scale() Method</h1>
+<div class="square"></div>
+<div class="droplet"></div>
+
+</body>
+</html>

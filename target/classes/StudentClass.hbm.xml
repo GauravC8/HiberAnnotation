@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 25, 2019 10:26:33 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.niit.hiber.StudentClass" table="STUDENTCLASS">
+        <id name="classId" type="java.lang.String">
+            <column name="CLASSID" />
+            <generator class="native" />
+        </id>
+        <property name="className" type="java.lang.String">
+            <column name="CLASSNAME" />
+        </property>
+    </class>
+</hibernate-mapping>

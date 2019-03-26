@@ -1,0 +1,72 @@
+﻿#header {
+    background-color:Yellow;
+    color:brown;
+    text-align:center;
+    font-family:'Bernard MT';
+    padding:5px;
+}
+
+#navlinks {
+    line-height:30px; /* Distance between top of the first line to the top of 2nd line */
+    background-color:Gold;
+    height:750px;
+    width:150px;
+    float:left;
+    padding:5px;	      
+}
+
+#section {
+    width:500px;
+    height:500px;
+    float:left;
+    padding:10px;
+    text-align:justify;
+   color:blue;	 
+   background-image:url("Desert.jpg");	 
+}
+
+span
+{
+    color: red;
+    font-weight:bold;
+}
+
+#ASIDE {
+         float:right;
+         background-color:goldenrod;
+         width:300px;
+         height:760px;
+         text-align:justify;
+        
+         }
+
+#footer {
+    background-color:Yellow;
+    color:orangered;
+    clear:both;  /* do not allow floating elements on left or right side */
+    text-align:center;
+   padding:5px;	 	 
+}
+
+#fig
+{
+    text-align:center;
+}
+
+#t
+{text-shadow:5px 5px 5px red;
+ text-align:center;
+ border-style:double;
+ border:2px solid;
+ border-color:blueviolet;
+ border-radius:25px;
+ background-color:aliceblue;
+}
+
+#article
+{
+    width: 700px;
+    background-color:aquamarine;
+    text-align: justify;
+}
+
